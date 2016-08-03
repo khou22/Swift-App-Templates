@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0Vi-R4-9eU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Second-->
+        <scene sceneID="t7t-7V-2Jd">
+            <objects>
+                <viewController id="0Vi-R4-9eU" customClass="SecondViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VIL-zs-eHO"/>
+                        <viewControllerLayoutGuide type="bottom" id="fbE-Jt-6Ki"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b8g-FR-dL6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pnr-6B-Ot7">
+                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loaded by HistoryViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvb-ze-zCV">
+                                <rect key="frame" x="192" y="329" width="216" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Pnr-6B-Ot7" secondAttribute="centerX" id="GWA-fz-qtC"/>
+                            <constraint firstItem="cvb-ze-zCV" firstAttribute="centerX" secondItem="Pnr-6B-Ot7" secondAttribute="centerX" id="RoG-aW-6t8"/>
+                            <constraint firstAttribute="centerY" secondItem="Pnr-6B-Ot7" secondAttribute="centerY" id="WHz-fe-1fN"/>
+                            <constraint firstItem="cvb-ze-zCV" firstAttribute="top" secondItem="Pnr-6B-Ot7" secondAttribute="bottom" constant="8" symbolic="YES" id="tBV-gs-sVx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="SEb-4b-hE7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ty9-lB-3zs" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581" y="470"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
