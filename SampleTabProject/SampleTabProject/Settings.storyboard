@@ -55,11 +55,35 @@
                     <navigationItem key="navigationItem" title="Settings" id="J87-bZ-une"/>
                     <connections>
                         <outlet property="tableView" destination="qtb-4r-52y" id="qGy-Qu-Bla"/>
+                        <segue destination="13r-VL-kQa" kind="show" identifier="SettingsToProfile" id="4qi-on-ibm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5j-nY-5RH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="562" y="565"/>
+        </scene>
+        <!--Profile Screen-->
+        <scene sceneID="0IE-xD-RzW">
+            <objects>
+                <viewController id="13r-VL-kQa" customClass="ProfileScreen" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vbf-2V-a33"/>
+                        <viewControllerLayoutGuide type="bottom" id="qua-TN-5kM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W4D-Sj-VXT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Aq-DN-glo">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOR-cV-Y66" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VrH-MX-TOd">

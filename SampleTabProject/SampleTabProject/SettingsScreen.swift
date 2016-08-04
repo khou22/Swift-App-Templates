@@ -11,7 +11,7 @@ import UIKit
 
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let settingTitles = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
+    let settingTitles = ["Profile", "Item 2", "Item 3", "Item 4", "Item 5"]
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -44,6 +44,15 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("Selected: \(settingTitles[indexPath.row])") // Feedback
+        let profile = 0
+        
+        switch indexPath.row {
+        case profile:
+            performSegueWithIdentifier(SegueIdentifiers.SettingsToProfile, sender: nil)
+            break
+        default:
+            break
+        }
     }
     
     func adjustForScreenSizes() {

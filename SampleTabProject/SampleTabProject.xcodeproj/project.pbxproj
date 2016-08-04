@@ -10,6 +10,7 @@
 		11A1EE581D53C962002F96C2 /* TabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1EE571D53C962002F96C2 /* TabBarExtension.swift */; };
 		11A1EE5B1D53C98F002F96C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1EE5A1D53C98F002F96C2 /* Constants.swift */; };
 		11A1EE5E1D53ED8F002F96C2 /* NameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1EE5D1D53ED8F002F96C2 /* NameCell.swift */; };
+		11A1EE611D53FB33002F96C2 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1EE601D53FB33002F96C2 /* ProfileScreen.swift */; };
 		11C678E51D52A390008880EC /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C678E41D52A390008880EC /* ContactsScreen.swift */; };
 		11C678E71D52A3D6008880EC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C678E61D52A3D6008880EC /* LaunchScreen.swift */; };
 		11C678E91D52A3EF008880EC /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C678E81D52A3EF008880EC /* Launch.storyboard */; };
@@ -49,6 +50,7 @@
 		11A1EE571D53C962002F96C2 /* TabBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarExtension.swift; sourceTree = "<group>"; };
 		11A1EE5A1D53C98F002F96C2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		11A1EE5D1D53ED8F002F96C2 /* NameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameCell.swift; sourceTree = "<group>"; };
+		11A1EE601D53FB33002F96C2 /* ProfileScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		11C678E41D52A390008880EC /* ContactsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
 		11C678E61D52A3D6008880EC /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		11C678E81D52A3EF008880EC /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				11D7F8BC1D529E9B00308FD6 /* SettingsScreen.swift */,
+				11A1EE601D53FB33002F96C2 /* ProfileScreen.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				11D7F8BD1D529E9B00308FD6 /* SettingsScreen.swift in Sources */,
 				11C678E51D52A390008880EC /* ContactsScreen.swift in Sources */,
 				11A1EE5B1D53C98F002F96C2 /* Constants.swift in Sources */,
+				11A1EE611D53FB33002F96C2 /* ProfileScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
