@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-294" y="-181"/>
         </scene>
-        <!--Favorites View Controller-->
+        <!--Favorites-->
         <scene sceneID="Pia-bQ-gkd">
             <objects>
                 <viewController storyboardIdentifier="favoritesStoryboardScreen" id="Cs1-Hw-UoC" customClass="FavoritesViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,29 +35,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Favorites View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eZa-OX-Ylh">
-                                <rect key="frame" x="182" y="279" width="236" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FavoritesViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dsd-d0-CUe">
-                                <rect key="frame" x="188" y="329" width="224" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="oiu-An-XBE">
+                                <rect key="frame" x="200" y="194" width="200" height="93"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store Favorite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFs-qC-uDQ">
+                                        <rect key="frame" x="47" y="0.0" width="106" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1gD-3Q-c5k">
+                                        <rect key="frame" x="0.0" y="27" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="TSc-na-oga"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21A-rx-Qpk">
+                                        <rect key="frame" x="83" y="63" width="34" height="30"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="savedName:" destination="Cs1-Hw-UoC" eventType="touchUpInside" id="niX-fj-lyl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D26-hC-hQI">
+                                <rect key="frame" x="231" y="317" width="138" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Saved Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxi-D4-7DZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ale-gb-K8S">
+                                        <rect key="frame" x="57" y="21" width="24" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="eZa-OX-Ylh" secondAttribute="centerX" id="K3d-ds-rQV"/>
-                            <constraint firstAttribute="centerY" secondItem="eZa-OX-Ylh" secondAttribute="centerY" id="eK3-Na-cSY"/>
-                            <constraint firstItem="Dsd-d0-CUe" firstAttribute="centerX" secondItem="eZa-OX-Ylh" secondAttribute="centerX" id="gcb-K2-BXl"/>
-                            <constraint firstItem="Dsd-d0-CUe" firstAttribute="top" secondItem="eZa-OX-Ylh" secondAttribute="bottom" constant="8" symbolic="YES" id="sKx-aP-v23"/>
+                            <constraint firstItem="D26-hC-hQI" firstAttribute="top" secondItem="oiu-An-XBE" secondAttribute="bottom" constant="30" id="1EU-9B-aHV"/>
+                            <constraint firstItem="oiu-An-XBE" firstAttribute="centerX" secondItem="LBE-Ll-3tf" secondAttribute="centerX" id="Rs5-Nb-Oav"/>
+                            <constraint firstItem="D26-hC-hQI" firstAttribute="centerX" secondItem="LBE-Ll-3tf" secondAttribute="centerX" id="b3M-4P-Tt5"/>
+                            <constraint firstItem="oiu-An-XBE" firstAttribute="centerY" secondItem="LBE-Ll-3tf" secondAttribute="centerY" constant="-60" id="wbH-Id-3qE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="HBe-L2-kRH"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="HBe-L2-kRH"/>
+                    <connections>
+                        <outlet property="lastSavedName" destination="ale-gb-K8S" id="MvA-uw-egQ"/>
+                        <outlet property="nameField" destination="1gD-3Q-c5k" id="2xs-Cm-oE1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="puu-rd-DQi" sceneMemberID="firstResponder"/>
             </objects>

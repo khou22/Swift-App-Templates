@@ -5,6 +5,7 @@
 //  Created by Breathometer on 8/4/16.
 //  Copyright © 2016 KevinHou. All rights reserved.
 //
+//  Reference: http://khou22.github.io/programming/2016/07/20/xcode-best-practices-july-2016-troubleshooting-pull-requests-and-more.html
 
 import Foundation
 import UIKit
@@ -48,9 +49,14 @@ struct SDK {
     static let sdkAppID                     = "random"
 }
 
+struct Constants {
+    // NSUserDefaults initializer
+    static let defaults                     = NSUserDefaults.standardUserDefaults()
+}
+
 struct Keys {
     // NSUserDefault keys:
-    static let username                     = "khou22"
+    static let favoriteContact              = "favoriteContact"
     
     // Other keys
 }

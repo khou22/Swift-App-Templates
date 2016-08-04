@@ -10,11 +10,14 @@ import UIKit
 
 class FavoritesViewController: UIViewController {
 
+    @IBOutlet weak var lastSavedName: UILabel!
+    @IBOutlet weak var nameField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        adjustForScreenSizes() // Adjust formatting for screen size
+        readSavedName() // Update view
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,18 +25,19 @@ class FavoritesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func adjustForScreenSizes() {
-        
-        if DeviceTypes.iPhone5 || DeviceTypes.iPhone4 || DeviceTypes.iPhone6Zoomed {
-            // Change constraint constants, etc. here for these smaller device screens
-            
-        } else if DeviceTypes.iPad {
-            
-        } else {
-            
+    @IBAction func savedName(sender: AnyObject) {
+        if let name = nameField.text { // If typed something
+            Constants.defaults.setObject(name, forKey: Keys.favoriteContact)
+            readSavedName() // Apply to view
         }
-        
-        view.layoutIfNeeded() // Refresh screen
     }
+    
+    func readSavedName() {
+        if let storedName = Constants.defaults.stringForKey(Keys.favoriteContact) {
+            // Good practice to ensure there is a value that exists
+            lastSavedName.text = storedName
+        }
+    }
+    
 }
 

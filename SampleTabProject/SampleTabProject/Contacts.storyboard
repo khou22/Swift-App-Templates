@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Contacts View Controller-->
+        <!--Contacts-->
         <scene sceneID="IAq-XU-Ylj">
             <objects>
                 <viewController id="qxD-VZ-Hz3" customClass="ContactsViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,30 +16,9 @@
                     <view key="view" contentMode="scaleToFill" id="Ag8-Lf-NGc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Contacts View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="P3a-Ie-STe">
-                                <rect key="frame" x="185" y="279" width="230" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by ContactsViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0j-to-xnk">
-                                <rect key="frame" x="188" y="329" width="224" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="u0j-to-xnk" firstAttribute="top" secondItem="P3a-Ie-STe" secondAttribute="bottom" constant="8" symbolic="YES" id="0h8-Wn-Ekh"/>
-                            <constraint firstItem="u0j-to-xnk" firstAttribute="centerX" secondItem="P3a-Ie-STe" secondAttribute="centerX" id="874-0S-A9a"/>
-                            <constraint firstAttribute="centerX" secondItem="P3a-Ie-STe" secondAttribute="centerX" id="FAC-Dr-fhh"/>
-                            <constraint firstAttribute="centerY" secondItem="P3a-Ie-STe" secondAttribute="centerY" id="MWX-yf-7ED"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Wbu-8K-EYU"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="Wbu-8K-EYU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0a-Pu-Cbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
