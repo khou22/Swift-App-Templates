@@ -49,7 +49,7 @@
         <scene sceneID="gxB-nS-sKh">
             <objects>
                 <navigationController id="weS-m6-MT4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="o5L-8I-W3E"/>
+                    <tabBarItem key="tabBarItem" id="o5L-8I-W3E"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cCW-zH-KTk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

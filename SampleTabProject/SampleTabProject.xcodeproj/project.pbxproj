@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A1EE581D53C962002F96C2 /* TabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1EE571D53C962002F96C2 /* TabBarExtension.swift */; };
+		11A1EE5B1D53C98F002F96C2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1EE5A1D53C98F002F96C2 /* Constants.swift */; };
 		11C678E51D52A390008880EC /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C678E41D52A390008880EC /* ContactsScreen.swift */; };
 		11C678E71D52A3D6008880EC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C678E61D52A3D6008880EC /* LaunchScreen.swift */; };
 		11C678E91D52A3EF008880EC /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C678E81D52A3EF008880EC /* Launch.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11A1EE571D53C962002F96C2 /* TabBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarExtension.swift; sourceTree = "<group>"; };
+		11A1EE5A1D53C98F002F96C2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
 		11C678E41D52A390008880EC /* ContactsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
 		11C678E61D52A3D6008880EC /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		11C678E81D52A3EF008880EC /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11A1EE591D53C965002F96C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11A1EE571D53C962002F96C2 /* TabBarExtension.swift */,
+			);
+			name = Extensions;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		11C678E21D52A355008880EC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,8 +153,10 @@
 		11D7F8851D5299BC00308FD6 /* SampleTabProject */ = {
 			isa = PBXGroup;
 			children = (
+				11A1EE591D53C965002F96C2 /* Extensions */,
 				11C678E31D52A360008880EC /* Storyboards */,
 				11C678E21D52A355008880EC /* Screens */,
+				11A1EE5A1D53C98F002F96C2 /* Constants.swift */,
 				11D7F8861D5299BC00308FD6 /* AppDelegate.swift */,
 				11D7F88F1D5299BC00308FD6 /* Assets.xcassets */,
 				11D7F8911D5299BC00308FD6 /* LaunchScreen.storyboard */,
@@ -308,8 +323,10 @@
 				11D7F8871D5299BC00308FD6 /* AppDelegate.swift in Sources */,
 				11C678E71D52A3D6008880EC /* LaunchScreen.swift in Sources */,
 				11D7F8891D5299BC00308FD6 /* FavoritesScreen.swift in Sources */,
+				11A1EE581D53C962002F96C2 /* TabBarExtension.swift in Sources */,
 				11D7F8BD1D529E9B00308FD6 /* SettingsScreen.swift in Sources */,
 				11C678E51D52A390008880EC /* ContactsScreen.swift in Sources */,
+				11A1EE5B1D53C98F002F96C2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
