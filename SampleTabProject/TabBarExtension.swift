@@ -27,7 +27,7 @@ class CustomTabController: UITabBarController {
         menuButton.backgroundColor = UIColor.lightGrayColor()
         menuButton.layer.cornerRadius = menuButtonFrame.height/2
         
-        menuButton.setImage(UIImage(named: "white-geo-flame"), forState: UIControlState.Normal)
+        menuButton.setImage(UIImage(named: Images.tabBarFire), forState: UIControlState.Normal)
         menuButton.contentMode = .ScaleAspectFit
         menuButton.addTarget(self, action: #selector(CustomTabController.menuButtonAction(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         

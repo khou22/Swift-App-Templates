@@ -26,7 +26,7 @@
         <!--Favorites View Controller-->
         <scene sceneID="Pia-bQ-gkd">
             <objects>
-                <viewController id="Cs1-Hw-UoC" customClass="FavoritesViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="favoritesStoryboardScreen" id="Cs1-Hw-UoC" customClass="FavoritesViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dDd-Sa-3Ke"/>
                         <viewControllerLayoutGuide type="bottom" id="Hrt-TJ-RB3"/>

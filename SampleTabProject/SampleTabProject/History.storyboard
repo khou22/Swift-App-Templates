@@ -8,7 +8,7 @@
         <!--History View Controller-->
         <scene sceneID="t7t-7V-2Jd">
             <objects>
-                <viewController id="0Vi-R4-9eU" customClass="HistoryViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="historyStoryboardScreen" id="0Vi-R4-9eU" customClass="HistoryViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VIL-zs-eHO"/>
                         <viewControllerLayoutGuide type="bottom" id="fbE-Jt-6Ki"/>
