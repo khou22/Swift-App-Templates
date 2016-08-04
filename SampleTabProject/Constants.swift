@@ -17,6 +17,8 @@ struct Colors {
     static let green                        = UIColor(red: 128.0, green: 164.0, blue: 84.0, alpha: 1.0)
     static let blue                         = UIColor(red: 50.0, green: 134.0, blue: 168.0, alpha: 1.0)
     static let grey                         = UIColor(red: 157.0, green: 183.0, blue: 193.0, alpha: 1.0)
+    static let white                        = UIColor(red: 255.0, green: 255.0, blue: 255.0, alpha: 1.0)
+    static let black                        = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
     static let clear                        = UIColor.clearColor()
 }
 
@@ -38,6 +40,7 @@ struct Storyboard {
 struct CellIdentifiers {
     // Table view cell identifiers
     static let settingsCell                 = "SettingsCell"
+    static let collectionCell               = "NameCell"
 }
 
 struct SegueIdentifiers {
@@ -56,7 +59,7 @@ struct Constants {
 
 struct Keys {
     // NSUserDefault keys:
-    static let favoriteContact              = "favoriteContact"
+    static let favoriteContacts             = "favoriteContacts"
     
     // Other keys
 }
