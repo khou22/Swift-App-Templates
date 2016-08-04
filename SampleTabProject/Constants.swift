@@ -34,6 +34,15 @@ struct Storyboard {
     static let history                      = "historyStoryboardScreen"
 }
 
+struct CellIdentifiers {
+    // Table view cell identifiers
+    static let settingsCell                 = "SettingsCell"
+}
+
+struct SegueIdentifiers {
+    // Segue identifiers
+}
+
 struct SDK {
     // SDK Keys
     static let sdkAppID                     = "random"

@@ -105,6 +105,14 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		11A1EE5C1D53E098002F96C2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				11D7F8BC1D529E9B00308FD6 /* SettingsScreen.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		11C678E21D52A355008880EC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +120,7 @@
 				11D7F88A1D5299BC00308FD6 /* HistoryScreen.swift */,
 				11C678E61D52A3D6008880EC /* LaunchScreen.swift */,
 				11C678E41D52A390008880EC /* ContactsScreen.swift */,
-				11D7F8BC1D529E9B00308FD6 /* SettingsScreen.swift */,
+				11A1EE5C1D53E098002F96C2 /* Settings */,
 			);
 			name = Screens;
 			sourceTree = "<group>";
@@ -472,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KevinHou.SampleTabProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -483,6 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KevinHou.SampleTabProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

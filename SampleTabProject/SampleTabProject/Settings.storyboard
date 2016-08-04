@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="iuZ-gi-e9k">
             <objects>
                 <viewController id="JxC-05-xrm" customClass="SettingsViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,29 +17,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Settings View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="M5d-Ol-bfz">
-                                <rect key="frame" x="191" y="279" width="218" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SettingsViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMB-kg-T4f">
-                                <rect key="frame" x="191" y="329" width="219" height="17"/>
+                                <rect key="frame" x="191" y="79" width="219" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qtb-4r-52y">
+                                <rect key="frame" x="0.0" y="111" width="600" height="489"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="3rp-y2-JGp">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3rp-y2-JGp" id="D2J-Zw-VCE">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JxC-05-xrm" id="OlH-hw-dVP"/>
+                                    <outlet property="delegate" destination="JxC-05-xrm" id="Sqv-j8-8e8"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="M5d-Ol-bfz" secondAttribute="centerX" id="OT5-te-yuZ"/>
-                            <constraint firstAttribute="centerY" secondItem="M5d-Ol-bfz" secondAttribute="centerY" id="SQI-SB-bQR"/>
-                            <constraint firstItem="BMB-kg-T4f" firstAttribute="centerX" secondItem="M5d-Ol-bfz" secondAttribute="centerX" id="Upc-N8-wC9"/>
-                            <constraint firstItem="BMB-kg-T4f" firstAttribute="top" secondItem="M5d-Ol-bfz" secondAttribute="bottom" constant="8" symbolic="YES" id="iZO-1d-jEQ"/>
+                            <constraint firstItem="BMB-kg-T4f" firstAttribute="centerX" secondItem="s1F-Yg-uqq" secondAttribute="centerX" id="47C-Dd-dst"/>
+                            <constraint firstItem="rts-aA-TSJ" firstAttribute="top" secondItem="qtb-4r-52y" secondAttribute="bottom" id="Hvr-Vr-yOq"/>
+                            <constraint firstItem="qtb-4r-52y" firstAttribute="leading" secondItem="s1F-Yg-uqq" secondAttribute="leading" id="X9f-Yb-61N"/>
+                            <constraint firstItem="BMB-kg-T4f" firstAttribute="top" secondItem="JYa-Mu-gPe" secondAttribute="bottom" constant="15" id="lYE-tU-3cQ"/>
+                            <constraint firstItem="qtb-4r-52y" firstAttribute="top" secondItem="BMB-kg-T4f" secondAttribute="bottom" constant="15" id="sED-Q3-AhK"/>
+                            <constraint firstAttribute="trailing" secondItem="qtb-4r-52y" secondAttribute="trailing" id="zf4-u8-QKM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="J87-bZ-une"/>
+                    <navigationItem key="navigationItem" title="Settings" id="J87-bZ-une"/>
+                    <connections>
+                        <outlet property="tableView" destination="qtb-4r-52y" id="qGy-Qu-Bla"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5j-nY-5RH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +66,6 @@
             <objects>
                 <navigationController id="BtR-dc-Zu6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="more" id="5nw-ek-RPg"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QAg-1g-83y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
