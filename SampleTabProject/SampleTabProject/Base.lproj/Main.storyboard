@@ -29,7 +29,7 @@
         <scene sceneID="BMc-KL-euz">
             <objects>
                 <viewControllerPlaceholder storyboardName="Settings" id="Ijz-gr-IaP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="Mee-Ub-6Ke"/>
+                    <tabBarItem key="tabBarItem" selectedImage="first" systemItem="more" id="Mee-Ub-6Ke"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYH-gP-JeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,4 +78,7 @@
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
 </document>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dfY-ya-AKI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="weS-m6-MT4">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Launch View Controller-->
         <scene sceneID="iln-C5-hUI">
             <objects>
-                <viewController id="dfY-ya-AKI" sceneMemberID="viewController">
+                <viewController id="dfY-ya-AKI" customClass="LaunchViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o4P-bC-1oB"/>
                         <viewControllerLayoutGuide type="bottom" id="UQn-eI-7TM"/>
@@ -39,10 +39,29 @@
                             <constraint firstItem="cGJ-AY-WFi" firstAttribute="top" secondItem="5sW-tD-Zkh" secondAttribute="bottom" constant="8" symbolic="YES" id="jab-AK-pJ0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xns-Xw-xDx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ICX-b5-qWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="562" y="565"/>
+            <point key="canvasLocation" x="391" y="-181"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gxB-nS-sKh">
+            <objects>
+                <navigationController id="weS-m6-MT4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="o5L-8I-W3E"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cCW-zH-KTk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dfY-ya-AKI" kind="relationship" relationship="rootViewController" id="Stx-MJ-PAv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7N3-og-yM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-294" y="-181"/>
         </scene>
     </scenes>
 </document>

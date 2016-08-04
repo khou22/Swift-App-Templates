@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qxD-VZ-Hz3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fvS-we-I2o">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Contacts View Controller-->
         <scene sceneID="IAq-XU-Ylj">
             <objects>
-                <viewController id="qxD-VZ-Hz3" sceneMemberID="viewController">
+                <viewController id="qxD-VZ-Hz3" customClass="ContactsViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1aG-xl-XNw"/>
                         <viewControllerLayoutGuide type="bottom" id="GN4-hH-7kE"/>
@@ -39,10 +39,29 @@
                             <constraint firstAttribute="centerY" secondItem="P3a-Ie-STe" secondAttribute="centerY" id="MWX-yf-7ED"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Wbu-8K-EYU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0a-Pu-Cbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="562" y="565"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NsY-w7-Cp5">
+            <objects>
+                <navigationController id="fvS-we-I2o" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="tfX-uQ-BzB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zDl-43-GSs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qxD-VZ-Hz3" kind="relationship" relationship="rootViewController" id="cTd-kO-gE6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHk-rK-PVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="565"/>
         </scene>
     </scenes>
 </document>
