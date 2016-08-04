@@ -27,6 +27,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NsY-w7-Cp5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHk-rK-PVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="fvS-we-I2o" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="tfX-uQ-BzB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -38,7 +39,6 @@
                         <segue destination="qxD-VZ-Hz3" kind="relationship" relationship="rootViewController" id="cTd-kO-gE6"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OHk-rK-PVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-174" y="565"/>
         </scene>

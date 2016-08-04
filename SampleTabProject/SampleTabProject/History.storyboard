@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b1A-VE-BL8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nlG-DE-2Rc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--History View Controller-->
+        <!--History Pager-->
+        <scene sceneID="SZr-Hk-Ds8">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="nlG-DE-2Rc" customClass="HistoryPager" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="history" id="3GY-qf-H0M"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3h-xZ-dm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-450" y="36"/>
+        </scene>
+        <!--History Page One-->
         <scene sceneID="t7t-7V-2Jd">
             <objects>
-                <viewController storyboardIdentifier="historyStoryboardScreen" id="0Vi-R4-9eU" customClass="HistoryViewController" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="historyPageOne" id="0Vi-R4-9eU" customClass="HistoryPageOne" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VIL-zs-eHO"/>
                         <viewControllerLayoutGuide type="bottom" id="fbE-Jt-6Ki"/>
@@ -19,7 +30,6 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="History View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pnr-6B-Ot7">
                                 <rect key="frame" x="200" y="279" width="200" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -31,7 +41,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="Pnr-6B-Ot7" secondAttribute="centerX" id="GWA-fz-qtC"/>
                             <constraint firstItem="cvb-ze-zCV" firstAttribute="centerX" secondItem="Pnr-6B-Ot7" secondAttribute="centerX" id="RoG-aW-6t8"/>
@@ -43,25 +53,67 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ty9-lB-3zs" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="-181"/>
+            <point key="canvasLocation" x="-1140" y="-672"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="t4B-ey-TUZ">
+        <!--History Page Two-->
+        <scene sceneID="Qs9-Kq-1p6">
             <objects>
-                <navigationController id="b1A-VE-BL8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="history" id="qrw-1N-Ctr"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ueb-po-Wmz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="0Vi-R4-9eU" kind="relationship" relationship="rootViewController" id="cYh-1e-R7s"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PzP-d6-B7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="historyPageTwo" id="sri-5Q-0I2" customClass="HistoryPageTwo" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6c6-L2-eG9"/>
+                        <viewControllerLayoutGuide type="bottom" id="OeX-I8-lAV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5F8-fA-OiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ai-Qb-sL0">
+                                <rect key="frame" x="263" y="289" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ai-Qb-sL0" firstAttribute="centerY" secondItem="5F8-fA-OiQ" secondAttribute="centerY" id="Pm0-gY-ArC"/>
+                            <constraint firstItem="6ai-Qb-sL0" firstAttribute="centerX" secondItem="5F8-fA-OiQ" secondAttribute="centerX" id="Roz-yy-AuE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sp-1r-q0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-294" y="-181"/>
+            <point key="canvasLocation" x="-450" y="-672"/>
+        </scene>
+        <!--History Page Three-->
+        <scene sceneID="RKT-lr-69e">
+            <objects>
+                <viewController storyboardIdentifier="historyPageThree" id="dA5-mj-uP4" customClass="HistoryPageThree" customModule="SampleTabProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cod-1g-Mug"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jcc-Ja-uaN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HIz-tW-ePM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eE6-Pr-Fp4">
+                                <rect key="frame" x="256" y="289" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eE6-Pr-Fp4" firstAttribute="centerX" secondItem="HIz-tW-ePM" secondAttribute="centerX" id="20G-53-WL8"/>
+                            <constraint firstItem="eE6-Pr-Fp4" firstAttribute="centerY" secondItem="HIz-tW-ePM" secondAttribute="centerY" id="GN7-oF-hQR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaZ-Nl-rQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="-672"/>
         </scene>
     </scenes>
 </document>
