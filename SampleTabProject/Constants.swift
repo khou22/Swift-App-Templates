@@ -47,7 +47,7 @@ struct CellIdentifiers {
 
 struct SegueIdentifiers {
     // Segue identifiers
-    static let SettingsToProfile                   = "SettingsToProfile"
+    static let SettingsToProfile            = "SettingsToProfile"
 }
 
 struct SDK {

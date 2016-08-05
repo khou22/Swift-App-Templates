@@ -23,11 +23,18 @@ class FavoritesViewController: UIViewController, UICollectionViewDelegate, UICol
         
         collectionViewSpacing() // Layout and spacing
         updateSavedNames() // Update view
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     @IBAction func savedName(sender: AnyObject) {
