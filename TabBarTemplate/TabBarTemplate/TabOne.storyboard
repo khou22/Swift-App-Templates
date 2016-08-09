@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab One Screen-->
         <scene sceneID="SaQ-Hp-HQz">
             <objects>
-                <viewController id="4qc-bH-aWE" sceneMemberID="viewController">
+                <viewController id="4qc-bH-aWE" customClass="TabOneScreen" customModule="TabBarTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U6Z-hV-DfP"/>
                         <viewControllerLayoutGuide type="bottom" id="lSp-eP-kia"/>
@@ -16,7 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="xji-4m-qee">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaO-Ie-kmX">
+                                <rect key="frame" x="268" y="289" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SaO-Ie-kmX" firstAttribute="centerX" secondItem="xji-4m-qee" secondAttribute="centerX" id="kmZ-Wv-aUX"/>
+                            <constraint firstItem="SaO-Ie-kmX" firstAttribute="centerY" secondItem="xji-4m-qee" secondAttribute="centerY" id="txM-tx-tBV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="273-Ia-XkB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

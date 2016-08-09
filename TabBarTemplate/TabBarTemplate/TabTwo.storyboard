@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Two Screen-->
         <scene sceneID="mFl-a0-ouw">
             <objects>
-                <viewController id="7VP-AW-c3S" sceneMemberID="viewController">
+                <viewController id="7VP-AW-c3S" customClass="TabTwoScreen" customModule="TabBarTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7Ie-qe-LlB"/>
                         <viewControllerLayoutGuide type="bottom" id="LYN-cR-GiW"/>
@@ -16,9 +16,21 @@
                     <view key="view" contentMode="scaleToFill" id="bdH-l3-0xP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofl-to-no6">
+                                <rect key="frame" x="268" y="289" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ofl-to-no6" firstAttribute="centerX" secondItem="bdH-l3-0xP" secondAttribute="centerX" id="HbX-9Q-x4g"/>
+                            <constraint firstItem="ofl-to-no6" firstAttribute="centerY" secondItem="bdH-l3-0xP" secondAttribute="centerY" id="lqP-Nv-0Ij"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="BUa-Ac-Uvd"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="BUa-Ac-Uvd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFp-VY-lsD" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Three Screen-->
         <scene sceneID="fHa-il-z2I">
             <objects>
-                <viewController id="Xe0-5m-ows" sceneMemberID="viewController">
+                <viewController id="Xe0-5m-ows" customClass="TabThreeScreen" customModule="TabBarTemplate" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="90a-w8-nT8"/>
                         <viewControllerLayoutGuide type="bottom" id="3Au-Vv-Rzi"/>
@@ -16,9 +16,21 @@
                     <view key="view" contentMode="scaleToFill" id="b2h-d5-IwB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tab Three" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mec-Yj-Ylo">
+                                <rect key="frame" x="261" y="289" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mec-Yj-Ylo" firstAttribute="centerX" secondItem="b2h-d5-IwB" secondAttribute="centerX" id="EvI-OP-90s"/>
+                            <constraint firstItem="Mec-Yj-Ylo" firstAttribute="centerY" secondItem="b2h-d5-IwB" secondAttribute="centerY" id="vs1-ZB-BYg"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="iN3-B5-h2o"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="iN3-B5-h2o"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fx3-v0-Eve" userLabel="First Responder" sceneMemberID="firstResponder"/>
