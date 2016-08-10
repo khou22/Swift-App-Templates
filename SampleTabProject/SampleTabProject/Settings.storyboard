@@ -74,12 +74,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Aq-DN-glo">
-                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Aq-DN-glo">
+                                <rect key="frame" x="180" y="120" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="n05-fH-j6a"/>
+                                    <constraint firstAttribute="height" constant="240" id="ul0-tp-sh8"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGf-Ze-hkT">
+                                <rect key="frame" x="228" y="368" width="144" height="30"/>
+                                <state key="normal" title="Select Profile Picture"/>
+                                <connections>
+                                    <action selector="selectProfilePicture:" destination="13r-VL-kQa" eventType="touchUpInside" id="Vm5-9H-sm8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Aq-DN-glo" firstAttribute="centerX" secondItem="W4D-Sj-VXT" secondAttribute="centerX" id="ZWr-z1-t61"/>
+                            <constraint firstItem="KGf-Ze-hkT" firstAttribute="top" secondItem="2Aq-DN-glo" secondAttribute="bottom" constant="8" id="aiH-qV-Fko"/>
+                            <constraint firstItem="2Aq-DN-glo" firstAttribute="centerY" secondItem="W4D-Sj-VXT" secondAttribute="centerY" constant="-60" id="fFd-cX-XwP"/>
+                            <constraint firstItem="KGf-Ze-hkT" firstAttribute="centerX" secondItem="W4D-Sj-VXT" secondAttribute="centerX" id="gxp-q3-Mug"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profilePictureImageView" destination="2Aq-DN-glo" id="ik2-FC-m7m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOR-cV-Y66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
